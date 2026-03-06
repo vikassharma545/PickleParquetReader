@@ -1,2 +1,3 @@
 @echo off
-start /B pythonw "C:\Program Files\PickleParquetReader\pickleparquetreader.py" "%~1"
+SET script_dir=%~dp0
+start /B pythonw "%script_dir%pickleparquetreader.py" "%~1"

@@ -2,16 +2,17 @@
 
 ## Description
 
-PickleParquetReader is a utility for viewing `.pkl` (pickle) and `.parquet` files in Microsoft Excel by converting them to CSV format.
+PickleParquetReader is a lightweight, secure utility for seamlessly viewing Python `.pkl` (pickle) and `.parquet` data files in Microsoft Excel (or your system's default CSV viewer). It operates by performing a memory-safe conversion to temporary CSV files.
 
 ## Prerequisites
 
-- Python 3.x
-- Git and MicrosoftExcel installed on your system
-- Administrative privileges for setting up file associations
+- Python 3.10+
+- Git installed on your system
+- Microsoft Excel (or another default CSV reader)
+- Required Python packages:
 - Requirements:
    ```
-   pip install pandas pyarrow psutil
+   pip install pandas pyarrow
    ```
 
 ## Installation
@@ -26,7 +27,7 @@ PickleParquetReader is a utility for viewing `.pkl` (pickle) and `.parquet` file
 
 
 ## Setting Up File Associations
-To automatically open `.pkl` and `.parquet` files with PickleParquetReader, you can set up file associations manually using the "Always use this app" option in Windows.
+To automatically open `.pkl` and `.parquet` files with PickleParquetReader, set up Windows file associations:
 
 1. **Locate a `.pkl` or `.parquet` file** on your computer.
 2. **Right-click** the file and select **"Open with"** > **"Choose another app."**
